@@ -15,8 +15,12 @@
   },
   "compilerOptions": {
     "strict": true,
-    "lib": ["ESNext", "DOM"],
-    "target": "ES2022"
+    "lib": ["ESNext", "DOM", "Deno.ns"]
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["no-slow-types"]
+    }
   },
   "imports": {
     "@livestore/livestore": "npm:@livestore/livestore@^0.3.1"

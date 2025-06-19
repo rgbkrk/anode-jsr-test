@@ -6,10 +6,9 @@
   "exports": {
     ".": "./main.ts"
   },
-  "nodeModulesDir": "auto",
   "compilerOptions": {
     "strict": true,
-    "lib": ["ESNext"]
+    "lib": ["ESNext", "DOM", "Deno.ns"]
   },
   "imports": {
     "@anode/schema": "../../packages/schema/schema.ts",
