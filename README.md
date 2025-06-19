@@ -115,5 +115,5 @@ deno publish
 
 ## Requirements
 
-- Deno 1.40+ (uses workspace features)
+- Deno 2.3.3+ (uses workspace features)
 - Permissions: `--allow-env` (for Livestore utilities)
