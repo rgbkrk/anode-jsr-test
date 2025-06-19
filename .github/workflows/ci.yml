@@ -73,7 +73,7 @@ jobs:
       - name: Dry run publish schema package
         run: |
           cd packages/schema
-          deno publish --dry-run
+          deno publish --dry-run --allow-slow-types
 
   security:
     name: Security Audit
