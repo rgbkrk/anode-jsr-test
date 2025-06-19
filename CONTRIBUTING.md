@@ -1,6 +1,7 @@
 # Contributing to Anode Schema
 
-Thank you for your interest in contributing to the Anode Schema project! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to the Anode Schema project! This
+document provides guidelines and information for contributors.
 
 ## Development Setup
 
@@ -59,11 +60,13 @@ anode-jsr-test/
 ### Testing Your Changes
 
 Run the full test suite:
+
 ```bash
 deno task ci
 ```
 
 This will run:
+
 - Code formatting check
 - Linting
 - Type checking
@@ -95,16 +98,19 @@ deno task publish:dry-run
 ## Code Standards
 
 ### Formatting
+
 - Use `deno fmt` for consistent formatting
 - 2-space indentation
 - Follow Deno style guidelines
 
 ### Linting
+
 - All code must pass `deno lint`
 - Use TypeScript strict mode
 - Avoid `any` types when possible
 
 ### Testing
+
 - Add tests for new functionality
 - Maintain test coverage
 - Tests should be descriptive and focused
@@ -122,6 +128,7 @@ type(scope): description
 ```
 
 Types:
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -131,6 +138,7 @@ Types:
 - `chore`: Build/tooling changes
 
 Examples:
+
 ```
 feat(schema): add new table for user preferences
 fix(cli): handle empty schema gracefully
@@ -201,4 +209,5 @@ Releases are handled by maintainers:
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the same license as the project (BSD-3-Clause).
+By contributing, you agree that your contributions will be licensed under the
+same license as the project (BSD-3-Clause).
