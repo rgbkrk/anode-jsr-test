@@ -1,0 +1,27 @@
+{
+  "name": "@anode/monorepo",
+  "version": "0.1.0",
+  "description": "Anode monorepo with schema package and CLI app",
+  "license": "BSD-3-Clause",
+  "exports": {
+    ".": "./packages/schema/schema.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rgbkrk/anode.git"
+  },
+  "workspace": ["packages/*", "apps/*"],
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["ESNext", "DOM"],
+    "target": "ES2022"
+  },
+  "imports": {
+    "@anode/schema": "./packages/schema/schema.ts",
+    "@livestore/livestore": "npm:@livestore/livestore@^0.3.1"
+  },
+  "tasks": {
+    "cli": "cd apps/cli && deno task start",
+    "cli:dev": "cd apps/cli && deno task dev"
+  }
+}
